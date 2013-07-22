@@ -13,7 +13,7 @@ class TasksController < ApplicationController
   def index
   	@complete = Task.where(complete: true)
   	@incomplete = Task.where(complete: false)
-  end
+  end 
 
   def update
   	@task = Task.find(params[:id])

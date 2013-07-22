@@ -32,6 +32,24 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+group :development, :test do
+	gem 'rspec-rails'
+	gem 'guard'
+	gem 'guard-rspec'
+	gem 'guard-spork'
+	gem 'database_cleaner'
+	gem 'spork-rails', github: 'sporkrb/spork-rails'
+end
+
+gem 'libnotify', '0.8.0'
+
+group :test do
+	gem 'selenium-webdriver'
+	gem 'capybara'
+	gem 'factory_girl_rails'
+	gem 'capybara-webkit'
+end
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
